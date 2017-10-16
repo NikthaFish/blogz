@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Posts</h1>
+    <form action="/add", method='post'>
+        <label>
+            Title:
+            <br>
+            <input type="text" name='name'/>
+            <p class = "error">{{error}}</p>
+            <br>
+        </label>
+        <label>Text: 
+            <br>
+            <textarea name='body' col="50" rows = "5">Write your post!</textarea>
+            <p class = "error">{{error}}</p>
+            <br>
+        </label>
+            <input type="submit" value='Post!' />
+    </form>
+
+    <hr />
+
+{% if error %}
+<p class='error'>{{ error }}</p>
+{% endif %}
+
+{% endblock %}
