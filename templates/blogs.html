@@ -7,7 +7,7 @@
         <ul>
             {% for post in posts %}
             <li>
-                <h4><a href = "/?id={{post.id}}">{{post.name}}</a></h4>
+                <h4><a href = "/blogs?id={{post.id}}">{{post.name}}</a></h4>
                 {{post.body}}
             </li>
             {% endfor %}
