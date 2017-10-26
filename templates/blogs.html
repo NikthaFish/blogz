@@ -8,7 +8,8 @@
             {% for post in posts %}
             <li>
                 <h4><a href = "/blogs?id={{post.id}}">{{post.name}}</a></h4>
-                {{post.body}}
+                {{post.body}}<br>
+                <small>Written by <a href = "/blogs?user={{post.user_id}}">{{post.user_id}}</a></small>
             </li>
             {% endfor %}
         </ul>

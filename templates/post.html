@@ -2,9 +2,9 @@
 {% block content %}
 
 <br>
-<h2>{{content.name}}</h2>
-<h3>{{content.body}}</h3>
-<h6>Written by <a href = "/blogs?user={{content.user_id}}">{{content.user_id}}</a></h6>
+<h2> {{content.name}}</h2>
+<h4> {{content.body}}</h4>
+<small>Written by <a href = "/blogs?user={{content.user_id}}">{{content.user_id}}</a></small>
 
 
 {% endblock %}
